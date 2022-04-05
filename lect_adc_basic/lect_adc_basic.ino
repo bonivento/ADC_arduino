@@ -7,9 +7,10 @@ void setup() {
 
 void loop() {
 
- analogReference(EXTERNAL);
+ //analogReference(EXTERNAL);
  int value = analogRead(A0);
- float volt = value*3.3/1023.0;
+ float volt = value*5/1023.0;
+ Serial.print("Volataje = ");
  Serial.println(volt);
  delay(1000);
 }
